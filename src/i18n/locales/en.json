@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "quality": "Quality",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Where Nature Meets Science",
+    "title": "Botanical Extracts & Pure Natural Oils",
+    "subtitle": "We produce botanical extracts and essential oils according to GMP standards",
+    "cta_primary": "Explore Products",
+    "cta_secondary": "Contact Us"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "NeoTonic for Pure Essential Botanical Extract",
+    "description": "NeoTonic specializes in the production of botanical extracts, essential oils, and vegetable oils for medical, food, cosmetic, and veterinary applications.",
+    "mission_title": "Our Mission",
+    "mission_text": "To deliver high-quality plant-based raw materials, sustainably harnessing the botanical wealth bestowed upon our nation, and advancing research to unlock the full potential of our indigenous plants and herbs.",
+    "values": {
+      "gmp": "GMP Standards",
+      "gmp_desc": "Facility designed according to Good Manufacturing Practice",
+      "local": "Local Raw Materials",
+      "local_desc": "We rely on native plants from our country",
+      "research": "Research & Development",
+      "research_desc": "Research to discover the benefits of plants and herbs"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Purity of nature in every drop",
+    "categories": {
+      "all": "All",
+      "cold_pressed": "Cold-Pressed Oils",
+      "oil_extracts": "Oil Extracts",
+      "liquid_extracts": "Liquid Extracts",
+      "others": "Other Products"
+    },
+    "table": {
+      "name": "Product Name",
+      "part": "Used Part",
+      "method": "Method",
+      "concentration": "Concentration",
+      "packaging": "Packaging",
+      "price": "Price"
+    },
+    "contact_for_price": "Contact for price"
+  },
+  "quality": {
+    "title": "Quality & Certifications",
+    "subtitle": "Standards that don't compromise"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to answer your inquiries",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Working Hours",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Your message has been sent successfully",
+      "error": "An error occurred, please try again"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "company": "NeoTonic for Pure Essential Botanical Extract",
+    "quick_links": "Quick Links",
+    "follow_us": "Follow Us"
+  }
+}

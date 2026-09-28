@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply text-ink antialiased;
+    font-feature-settings: "kern", "liga";
+    overflow-x: hidden;
+    
+    /* ⬇️ خلفية متدرجة ناعمة (3 طبقات) */
+    background: 
+      radial-gradient(ellipse at top left, #e8f3e8 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, #f0ebe0 0%, transparent 50%),
+      linear-gradient(180deg, #f7f5ef 0%, #f0ebe0 100%);
+    background-attachment: fixed;
+    background-color: #f7f5ef; /* fallback */
+  }
+
+  ::selection {
+    @apply bg-brand-500 text-white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-600/40 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-600/60;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-600 to-brand-800 bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply bg-white/60 backdrop-blur-xl border border-white/40;
+  }
+}
