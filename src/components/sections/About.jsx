@@ -19,11 +19,25 @@ export default function About() {
       className="relative min-h-screen flex items-center justify-center py-32"
     >
       <Container className="relative z-10">
-        <SectionTitle
-          eyebrow={t("nav.about")}
-          title={t("about.title")}
-          subtitle={t("about.description")}
-        />
+        {/* ⬇️ العنوان والوصف داخل Container زجاجي */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.9 }}
+          className="max-w-4xl mx-auto"
+        >
+          <div className="relative bg-white/50 backdrop-blur-xl border border-white/60 rounded-3xl p-8 md:p-12 shadow-xl shadow-brand-900/5">
+            {/* شريط ذهبي على الجانب */}
+            <div className="absolute top-8 bottom-8 start-0 w-1 bg-gradient-to-b from-gold via-brand-500 to-gold rounded-full" />
+
+            <SectionTitle
+              eyebrow={t("nav.about")}
+              title={t("about.title")}
+              subtitle={t("about.description")}
+            />
+          </div>
+        </motion.div>
 
         {/* الرسالة */}
         <motion.div
@@ -31,10 +45,9 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.9, delay: 0.3 }}
-          className="mt-20 max-w-4xl mx-auto"
+          className="mt-8 max-w-4xl mx-auto"
         >
           <div className="relative bg-white/50 backdrop-blur-xl border border-white/60 rounded-3xl p-8 md:p-12 shadow-xl shadow-brand-900/5">
-            {/* شريط ذهبي على الجانب */}
             <div className="absolute top-8 bottom-8 start-0 w-1 bg-gradient-to-b from-gold via-brand-500 to-gold rounded-full" />
 
             <h3 className="font-display text-2xl md:text-3xl font-semibold text-brand-800 mb-4">
