@@ -50,7 +50,7 @@ export default function Navbar() {
             <a href="#home" className="flex items-center gap-3 group">
               <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
                 <img
-                  src="/images/logo.jpg"
+                  src="/images/logo.png"
                   alt="NeoTonic"
                   className="w-[130%] h-[130%] object-cover"
                 />
