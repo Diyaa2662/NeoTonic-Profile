@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
 
-// ⬇️ بيانات المنتجات (مؤقتاً — رح ننقلها لملف منفصل لاحقاً)
+// ⬇️ بيانات المنتجات
 const PRODUCTS_DATA = {
   cold_pressed: [
     {
@@ -294,7 +294,7 @@ export default function Products() {
               className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
                 activeCategory === cat.key
                   ? "bg-brand-700 text-white shadow-lg shadow-brand-700/30"
-                  : "bg-white/60 backdrop-blur-md text-brand-700 border border-brand-200/60 hover:bg-white hover:border-brand-400"
+                  : "bg-white/70 backdrop-blur-md text-brand-700 border border-brand-200/60 hover:bg-white hover:border-brand-400"
               }`}
             >
               {cat.label}
@@ -320,7 +320,7 @@ export default function Products() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.04, duration: 0.5 }}
                   whileHover={{ y: -4 }}
-                  className="group bg-white/60 backdrop-blur-md border border-white/70 rounded-2xl p-6 hover:bg-white hover:shadow-xl hover:shadow-brand-900/10 transition-all duration-300"
+                  className="group bg-white/75 backdrop-blur-md border border-white/80 rounded-2xl p-6 hover:bg-white hover:shadow-xl hover:shadow-brand-900/10 transition-all duration-300"
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <h4 className="font-display text-lg font-semibold text-brand-800 leading-tight">
@@ -339,17 +339,17 @@ export default function Products() {
 
                   <div className="flex flex-wrap gap-2 text-xs">
                     {product.part_ar && (
-                      <span className="px-3 py-1 rounded-full bg-brand-50 text-brand-700">
+                      <span className="px-3 py-1 rounded-full bg-brand-100/80 text-brand-800 font-medium">
                         {lang === "ar" ? product.part_ar : product.part_en}
                       </span>
                     )}
                     {activeCategory === "cold_pressed" && (
-                      <span className="px-3 py-1 rounded-full bg-gold/10 text-gold-dark">
+                      <span className="px-3 py-1 rounded-full bg-gold/20 text-yellow-900 font-medium">
                         {lang === "ar" ? "عصر بارد" : "Cold Pressed"}
                       </span>
                     )}
                     {product.conc && (
-                      <span className="px-3 py-1 rounded-full bg-gold/10 text-yellow-800">
+                      <span className="px-3 py-1 rounded-full bg-gold/20 text-yellow-900 font-medium">
                         {product.conc}
                       </span>
                     )}

@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-brand-400 shrink-0" />
-                <span>info@neotonic.com</span>
+                <span>antneotonic@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-brand-400 mt-1 shrink-0" />

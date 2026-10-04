@@ -27,8 +27,7 @@ export default function About() {
           transition={{ duration: 0.9 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="relative bg-white/50 backdrop-blur-xl border border-white/60 rounded-3xl p-8 md:p-12 shadow-xl shadow-brand-900/5">
-            {/* شريط ذهبي على الجانب */}
+          <div className="relative glass-panel rounded-3xl p-8 md:p-12">
             <div className="absolute top-8 bottom-8 start-0 w-1 bg-gradient-to-b from-gold via-brand-500 to-gold rounded-full" />
 
             <SectionTitle
@@ -47,7 +46,7 @@ export default function About() {
           transition={{ duration: 0.9, delay: 0.3 }}
           className="mt-8 max-w-4xl mx-auto"
         >
-          <div className="relative bg-white/50 backdrop-blur-xl border border-white/60 rounded-3xl p-8 md:p-12 shadow-xl shadow-brand-900/5">
+          <div className="relative glass-panel rounded-3xl p-8 md:p-12">
             <div className="absolute top-8 bottom-8 start-0 w-1 bg-gradient-to-b from-gold via-brand-500 to-gold rounded-full" />
 
             <h3 className="font-display text-2xl md:text-3xl font-semibold text-brand-800 mb-4">
@@ -69,7 +68,7 @@ export default function About() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.7, delay: 0.1 * i }}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="group bg-white/50 backdrop-blur-xl border border-white/60 rounded-2xl p-8 shadow-lg shadow-brand-900/5 hover:shadow-xl hover:shadow-brand-900/10 transition-shadow"
+              className="group glass-panel rounded-2xl p-8 hover:shadow-xl transition-shadow"
             >
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-100 to-brand-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Icon size={26} className="text-brand-700" />

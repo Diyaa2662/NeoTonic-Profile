@@ -4,10 +4,10 @@ import { useScrollContext } from "../../contexts/ScrollContext";
 import FluidWave from "./elements/FluidWave";
 import Particles from "./elements/Particles";
 import GrowingPlant from "./elements/GrowingPlant";
-import Fruits from "./elements/Fruits";
-import Bottles from "./elements/Bottles";
-import Molecule from "./elements/Molecule";
-import Map from "./elements/Map";
+// import Fruits from "./elements/Fruits";
+// import Bottles from "./elements/Bottles";
+// import Molecule from "./elements/Molecule";
+// import Map from "./elements/Map";
 
 export default function CoreScene() {
   const { activeSection } = useScrollContext();
@@ -30,10 +30,10 @@ export default function CoreScene() {
       <FluidWave />
       <Particles count={120} />
       <GrowingPlant /> {/* Hero */}
-      <Fruits /> {/* About */}
-      <Bottles /> {/* Products */}
-      <Molecule /> {/* Quality */}
-      <Map /> {/* Contact */}
+      {/* <Fruits /> About */}
+      {/* <Bottles /> Products */}
+      {/* <Molecule /> Quality */}
+      {/* <Map /> Contact */}
     </group>
   );
 }

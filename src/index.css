@@ -12,13 +12,6 @@
     @apply text-ink antialiased;
     font-feature-settings: "kern", "liga";
     overflow-x: hidden;
-    
-    /* ⬇️ خلفية متدرجة ناعمة (3 طبقات) */
-    background: 
-      radial-gradient(ellipse at top left, #e8f3e8 0%, transparent 50%),
-      radial-gradient(ellipse at bottom right, #f0ebe0 0%, transparent 50%),
-      linear-gradient(180deg, #f7f5ef 0%, #f0ebe0 100%);
-    background-attachment: fixed;
     background-color: #f7f5ef; /* fallback */
   }
 
@@ -52,5 +45,18 @@
 
   .glass {
     @apply bg-white/60 backdrop-blur-xl border border-white/40;
+  }
+
+  /* ⬇️ نصوص فوق الخلفيات */
+  .text-shadow-soft {
+    text-shadow: 0 2px 8px rgba(247, 245, 239, 0.8);
+  }
+
+  /* ⬇️ Container زجاجي محسّن */
+  .glass-panel {
+    @apply bg-white/55 backdrop-blur-xl border border-white/70;
+    box-shadow:
+      0 20px 40px -12px rgba(30, 74, 30, 0.12),
+      0 0 0 1px rgba(255, 255, 255, 0.5) inset;
   }
 }

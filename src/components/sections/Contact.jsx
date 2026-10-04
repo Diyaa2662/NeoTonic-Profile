@@ -38,15 +38,14 @@ export default function Contact() {
     {
       Icon: Mail,
       label: t("contact.email"),
-      value: "info@neotonic.com",
+      value: "antneotonic@gmail.com",
       href: "mailto:info@neotonic.com",
       dir: "ltr",
     },
     {
       Icon: MapPin,
       label: t("contact.address"),
-      value:
-        t("contact.address") === "العنوان" ? "دمشق، سوريا" : "Damascus, Syria",
+      value: t("contact.address") === "العنوان" ? "حمص، سوريا" : "Homs, Syria",
       href: null,
     },
     {
