@@ -48,8 +48,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-400 to-brand-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-lg">N</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
+                <img
+                  src="/images/logo.jpg"
+                  alt="NeoTonic"
+                  className="w-[130%] h-[130%] object-cover"
+                />
               </div>
               <div className="flex flex-col leading-none">
                 <span
