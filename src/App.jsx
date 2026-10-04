@@ -23,9 +23,9 @@ function AppContent() {
       <div className="relative z-10">
         <Layout>
           <Hero />
-          <About />
           <Products />
           <Quality />
+          <About />
           <Contact />
         </Layout>
       </div>

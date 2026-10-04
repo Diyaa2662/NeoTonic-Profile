@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+// eslint-disable-next-line no-unused-vars
 import { ArrowDown, Sparkles } from "lucide-react";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
@@ -81,7 +82,7 @@ export default function Hero() {
       </Container>
 
       {/* Scroll indicator */}
-      <motion.a
+      {/* <motion.a
         href="#about"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -98,7 +99,7 @@ export default function Hero() {
         >
           <ArrowDown size={20} />
         </motion.div>
-      </motion.a>
+      </motion.a> */}
     </section>
   );
 }

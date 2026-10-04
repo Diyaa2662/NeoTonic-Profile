@@ -25,9 +25,9 @@ export default function Navbar() {
 
   const links = [
     { href: "#home", label: t("nav.home") },
-    { href: "#about", label: t("nav.about") },
     { href: "#products", label: t("nav.products") },
     { href: "#quality", label: t("nav.quality") },
+    { href: "#about", label: t("nav.about") },
     { href: "#contact", label: t("nav.contact") },
   ];
 
@@ -52,10 +52,24 @@ export default function Navbar() {
                 <span className="text-white font-bold text-lg">N</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-display font-semibold text-xl text-brand-800">
+                <span
+                  className={clsx(
+                    "font-display font-semibold text-xl transition-colors duration-500",
+                    scrolled
+                      ? "text-brand-800"
+                      : "text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]",
+                  )}
+                >
                   NeoTonic
                 </span>
-                <span className="text-[10px] tracking-widest text-brand-600 uppercase">
+                <span
+                  className={clsx(
+                    "text-[10px] tracking-widest uppercase transition-colors duration-500",
+                    scrolled
+                      ? "text-brand-600"
+                      : "text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]",
+                  )}
+                >
                   Botanical Extract
                 </span>
               </div>
@@ -67,10 +81,20 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="relative text-ink/80 hover:text-brand-700 font-medium transition-colors group"
+                  className={clsx(
+                    "relative font-medium transition-colors duration-500 group",
+                    scrolled
+                      ? "text-ink/80 hover:text-brand-700"
+                      : "text-white/95 hover:text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]",
+                  )}
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 group-hover:w-full transition-all duration-300" />
+                  <span
+                    className={clsx(
+                      "absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300",
+                      scrolled ? "bg-brand-600" : "bg-white",
+                    )}
+                  />
                 </a>
               ))}
             </nav>
@@ -79,7 +103,12 @@ export default function Navbar() {
             <div className="flex items-center gap-3">
               <button
                 onClick={toggleLanguage}
-                className="flex items-center gap-2 px-4 py-2 rounded-full border border-brand-600/30 hover:border-brand-600 hover:bg-brand-50 transition-all text-sm font-medium text-brand-700"
+                className={clsx(
+                  "flex items-center gap-2 px-4 py-2 rounded-full border transition-all text-sm font-medium",
+                  scrolled
+                    ? "border-brand-600/30 text-brand-700 hover:border-brand-600 hover:bg-brand-50"
+                    : "border-white/40 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white/60 drop-shadow-[0_2px_6px_rgba(0,0,0,0.3)]",
+                )}
               >
                 <Globe size={16} />
                 <span>{lang === "ar" ? "EN" : "ع"}</span>
@@ -87,7 +116,12 @@ export default function Navbar() {
 
               <button
                 onClick={() => setMobileOpen(true)}
-                className="lg:hidden p-2 rounded-full hover:bg-brand-50 transition"
+                className={clsx(
+                  "lg:hidden p-2 rounded-full transition",
+                  scrolled
+                    ? "text-ink hover:bg-brand-50"
+                    : "text-white bg-white/10 backdrop-blur-sm hover:bg-white/20",
+                )}
                 aria-label="Menu"
               >
                 <Menu size={24} />
