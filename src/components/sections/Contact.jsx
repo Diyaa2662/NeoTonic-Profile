@@ -38,14 +38,17 @@ export default function Contact() {
     {
       Icon: Mail,
       label: t("contact.email"),
-      value: "antneotonic@gmail.com",
-      href: "mailto:info@neotonic.com",
+      value: "info@neotonicglobal.com",
+      href: "mailto:info@neotonicglobal.com",
       dir: "ltr",
     },
     {
       Icon: MapPin,
       label: t("contact.address"),
-      value: t("contact.address") === "العنوان" ? "حمص، سوريا" : "Homs, Syria",
+      value:
+        t("contact.address") === "العنوان"
+          ? "سوريا, حمص, تنورين"
+          : "Syria, Homs, Tannourine",
       href: null,
     },
     {
@@ -53,8 +56,8 @@ export default function Contact() {
       label: t("contact.hours"),
       value:
         t("contact.hours") === "ساعات العمل"
-          ? "السبت - الخميس: 9:00 - 17:00"
-          : "Sat - Thu: 9:00 - 17:00",
+          ? "الاثنين - السبت: 9:00 - 17:00"
+          : "Mon-Sat: 9:00 - 17:00",
       href: null,
     },
   ];
